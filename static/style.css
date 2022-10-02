@@ -172,5 +172,9 @@ i.menu-mobile {
 }
 *::-webkit-scrollbar-thumb {
     background-color: #252c90;
-    border-radius: 10%;
+    
+}
+.section-bg{
+    background-color: #eff5ff;
+    
 }
