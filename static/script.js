@@ -21,4 +21,28 @@ const navItem = document.querySelectorAll('.nav-item')
             menuMobile.classList.replace("bi-x", "bi-list");
         }
     })
- })
+ });
+
+//Animação nos itens com atributo data anime
+
+const item= document.querySelectorAll("[data-anime]");
+
+const animeScroll = () => {
+
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85;
+
+    item.forEach((element) => {
+        if(windowTop > element.offsetTop) {
+            element.classList.add("animate");
+        } else {
+            element.classList.remove("animete");
+        }
+    });
+    
+};
+
+animeScroll();
+
+window.addEventListener("scroll", ()=> {
+    animeScroll();
+});
