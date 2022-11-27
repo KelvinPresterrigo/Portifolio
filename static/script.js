@@ -25,7 +25,7 @@ const navItem = document.querySelectorAll('.nav-item')
 
 //Animação nos itens com atributo data anime
 
-const item= document.querySelectorAll("[data-anime]");
+const item = document.querySelectorAll("[data-anime]");
 
 const animeScroll = () => {
 
@@ -35,7 +35,7 @@ const animeScroll = () => {
         if(windowTop > element.offsetTop) {
             element.classList.add("animate");
         } else {
-            element.classList.remove("animete");
+            element.classList.remove("animate");
         }
     });
     
@@ -46,3 +46,6 @@ animeScroll();
 window.addEventListener("scroll", ()=> {
     animeScroll();
 });
+
+
+
